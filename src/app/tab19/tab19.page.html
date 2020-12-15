@@ -1,0 +1,21 @@
+
+<ion-nav #mySubNav >
+  <ion-header translucent>
+    
+    <ion-toolbar>
+      <ion-title>Nav</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content fullscreen>
+    <ion-list>
+        <ion-item button *ngFor="let tech of techs; index as position" (click)="showDetail(tech,mySubNav)">
+          <ion-icon slot="start" [name]="'logo-'+tech.icon" [style]="'color: '+tech.color"></ion-icon>
+          <ion-label>
+            <h3>{{tech.title}}</h3>
+          </ion-label>
+          <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-nav>

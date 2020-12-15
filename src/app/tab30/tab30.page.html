@@ -1,0 +1,10 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Toast</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen class="ion-padding">
+  <ion-button expand="block" (click)="handleButtonClick()">Pair <ion-icon slot="end" name="bluetooth"></ion-icon></ion-button>
+  <ion-button expand="block" (click)="presentToast()">1 <ion-icon slot="end" name="bluetooth"></ion-icon></ion-button>
+  <ion-button expand="block" (click)="presentToastWithOptions()">2 <ion-icon slot="end" name="bluetooth"></ion-icon></ion-button>
+</ion-content>

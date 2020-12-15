@@ -1,0 +1,22 @@
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Refresher</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <ion-list *ngFor="let one of lists">
+      <ion-label class="ion-text-wrap">
+        <h2>{{one.name}}</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+      </ion-label>
+
+    </ion-list>
+  </ion-content>
+
+
+</ion-app>

@@ -1,0 +1,10 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-icon slot="start" name="chevron-back-outline" (click)="back()"></ion-icon>
+    <ion-title>{{tech.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen class="ion-padding">
+  <ion-icon [name]="'logo-'+tech.icon" [style]="'color: '+tech.color" size="large"></ion-icon>
+  <p>{{tech.description}}</p>
+</ion-content>

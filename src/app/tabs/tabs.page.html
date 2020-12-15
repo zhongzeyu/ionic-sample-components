@@ -1,0 +1,22 @@
+
+<ion-tabs>
+
+  <!--ion-card no-padding no-margin class="no-border-radius segment-card">
+    <ion-tab-button *ngFor="let tabOne of tabArray; index as position" [tab]="'tab'+(position+1)" class="segment-item" >
+      <ion-icon [name]=tabOne.iconname></ion-icon>
+      <ion-label>{{tabOne.label}}</ion-label>
+    </ion-tab-button>
+ </ion-card-->
+
+ <ion-tab-bar slot="bottom">
+    
+    <ion-tab-button *ngFor="let tabOne of tabArray; index as position" [tab]="'tab'+(position+1)">
+      <ion-icon [name]=tabOne.iconname></ion-icon>
+      <ion-label>{{tabOne.label}}</ion-label>
+    </ion-tab-button>
+ </ion-tab-bar>
+
+  
+
+</ion-tabs>
+

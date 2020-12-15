@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Alert
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Alert</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="presentAlert()">presentAlert</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="presentAlertMultipleButtons()">presentAlertMultipleButtons</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="presentAlertConfirm()">presentAlertConfirm</ion-button>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="presentAlertPrompt()">presentAlertPrompt</ion-button>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="presentAlertRadio()">presentAlertRadio</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="presentAlertCheckbox()">presentAlertCheckbox</ion-button>
+    </ion-col>
+  </ion-row>
+  
+  
+</ion-content>
